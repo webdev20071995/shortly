@@ -10,8 +10,26 @@
 <body>
     
     <!-- SITE-HEADER -->
-    <header>
-        
+    <header class="site-header">
+        <div class="site__header-container container">
+            <!-- LOGO -->
+            <a class="site-hedaer__logo logo" href="#">
+                <img class="logo__img" src="/img/Shortly.svg" alt="logo img" width="120" height="33">
+            </a>
+
+            <nav class="site__header-sitenav sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Features</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Pricing</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Resources</a></li>
+                </ul>
+            </nav>
+
+            <div class="site-header__auth">
+                <a class="site-header__login-link" href="#">Login</a>
+                <a class="button button-small" href="#">Sign Up</a>
+            </div>
+        </div>
     </header>
     <script src="/js/main.js"></script>
 </body>
