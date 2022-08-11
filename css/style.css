@@ -146,10 +146,17 @@ img{
     padding: 8px 24px;
     font-size: 15px;
     line-height: 22.5px;
+    margin-right: 20px;
 }
 
 .button--big{
-    padding: 18px 40px 16px; 
+    padding: 10px 40px 16px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    margin-left: 6px;
+    margin-top: -5px;
 }
 
 .button--rectangle{
@@ -157,6 +164,7 @@ img{
 }
 
 .button--rectangle-big{
+    /* margin-left: 39px; */
     border-radius: 10px;
 }
 
@@ -181,6 +189,8 @@ img{
 
 /* LOGO */
 .logo {
+    margin-left: 10px;
+    margin-top: 10px;
     display: inline-block;
 }
 
@@ -229,7 +239,7 @@ img{
 .site-header__login-link {
     text-decoration: none;
     color: var(--text-color);
-    margin-right: 32px;
+    margin-right: 40px;
 }
 
 .site-header__login-link:hover {
@@ -248,7 +258,7 @@ img{
     padding-bottom: 222px;
     background-image: url(../img/working_with_computer.svg);
     background-repeat: no-repeat;
-    background-position: left calc(50% + 436px) top 30px;
+    background-position: left calc(50% + 471px) top 30px;
 }
 
 .hero__inner {
@@ -265,6 +275,7 @@ img{
 }
 
 .hero__text {
+    margin-left: 15px;
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 22px;
@@ -289,9 +300,9 @@ img{
 
 .url-shortener__form {
     display: flex;
-    padding: 52px 64px;
+    padding: 52px 91px;
     border-radius: 10px;
-    margin-bottom: 24px;
+    margin-bottom: -3px;
     background-color: #4B3F6B;
     background-image: url(../img/form-bg.svg);
     background-size: cover;
@@ -308,7 +319,7 @@ img{
 
 .url-shortener__input {
     margin-top: -2px;
-    margin-left: 10px;
+    margin-left: -18px;
     flex-grow: 1;
     display: block;
     width: 100%; 
@@ -331,20 +342,22 @@ img{
 
 /* URL-SHORTENER-RESULTS */
 .url-shortener__results {
+    display: none;
     font-size: 20px;
     line-height: 36px;
 }
 
-.url-shortener-result {
+.url-shortener__results--open{
+    display: block;
+}
+
+.url-shortener__result {
     display: flex;
     align-items: center;
     border-radius: 5px ;
     padding: 16px 24px;
     background-color: #fff;
     color:var(--text-color-dark);
-}
-
-.url-shortener-result:not(:last-child){
     margin-bottom: 16px;
 }
 
@@ -364,5 +377,113 @@ img{
 
 .url-shortener__copy-button{
     min-width: 103px;
+}
+
+.url-shortener__copy-button--copied{
+    background-color: #3a3054;
+}
+
+
+/* INDEX-FEATURES */
+.index-features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--light-bg);
+
+}
+
+.index-features__top {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -34px;
+}
+
+.index-features__title {
+    font-size: 40px;
+    line-height: 48px; 
+    color: var(--text-color-dark);
+}
+
+.index-features__top-info {
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: -15px;
+}
+
+.index-features__list {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    /* padding-top: 56px; */
+    font-style: normal;
+}
+
+.index-features__list::before{
+    position: absolute;
+    z-index: -1;
+    margin-left: 0px;
+    top: 152px;
+    width: 90%;
+    height: 8px;
+    background-color: var(--accent-color);
+    content: "";
+}
+
+.index-features__item {
+    width: 350px;
+}
+
+.index-features__item:nth-child(2){
+    margin-top: 44px;
+}
+
+.index-features__item:nth-child(3){
+    margin-top: 88px;
+}
+
+.index-features__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.index-feature {
+    position: relative;
+    padding: 77px 32px 40px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.index-feature__icon-wrapper {
+    position: absolute;
+    left: 32px;
+    top:-44px;
+    display: flex;
+    width: 88px;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3054;
+    border-radius: 50%;
+}
+
+.index-feature__title{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: normal;
+    color: var(--text-color-dark);
+    margin-left: 8px;
+}
+
+.index-feature__info {
+    margin-left: 10px;
+    margin: 0;
 }
 
