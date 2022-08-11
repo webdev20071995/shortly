@@ -132,6 +132,7 @@ img{
     cursor: pointer;
     border-radius: 28px;
     white-space: nowrap;
+    width: 197px;
 }
 
 .button:hover{
@@ -143,6 +144,7 @@ img{
 }
 
 .button-small {
+    width: 105px;
     padding: 8px 24px;
     font-size: 15px;
     line-height: 22.5px;
@@ -485,5 +487,32 @@ img{
 .index-feature__info {
     margin-left: 10px;
     margin: 0;
+}
+
+
+/* CTA */
+.cta {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    background-image: url(../img/cta-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.cta__title {
+    margin-left: 12px;
+    margin-top: -3px;
+    margin-bottom: 32px;
+    font-size: 40px;
+    line-height: 48px;
 }
 
